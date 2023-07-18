@@ -1,0 +1,237 @@
+/* saherd style */
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --secondary-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+
+/* nav related style */
+nav{
+    background-color: #FFF;
+}
+.nav-container{    
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.logo-container{
+    align-items: center;
+    display: flex;
+    width: 50%;
+}
+.logo-container img{   
+    width: 50px;      
+    object-fit: cover;
+    margin-right: 10px;
+    
+}
+
+.logo-container p{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center ;
+    
+}
+.game-section{
+    color: #FF42A5;
+}
+.nav-item-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-item-container a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3C354F;
+}
+.nav-item-container .btn-follow{   
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #3C354F;
+    text-align: center;
+    border: none;
+    
+}
+.btn-follow #youtube{   
+    color: red;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-right: 5px;    
+}
+
+/* banner related styles */
+.banner-container{    
+    margin: 30px auto 0;
+    display: flex;
+    padding: 10px;
+    max-width: 1400px;
+    background-image: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+}
+.banner-text{    
+    width: 50%;
+    
+}
+.banner-img{
+   
+    width: 50%;
+    
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+}
+.banner-text h3{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+}
+.banner-text h1{
+    background-image: var(--secondary-color);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 95px;
+    font-weight: 800;
+}
+.icon-container p{
+    color: #534C64;   
+    font-size: 20px;    
+    font-weight: 500; 
+    
+}
+.button{
+    display: inline-flex;   
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px;
+}
+.btn-primary{
+    padding: 21px 40px;
+    border-radius: 48px;
+    align-items: flex-start;
+    border: none;
+    color: #FFF;
+    background-image: var(--primary-color);   
+    
+}
+.btn-secondary{
+    padding: 21px 40px;
+    border-radius: 48px;
+    align-items: flex-start;
+    border: none;
+    color: #FFF;
+    background: #4EC5F7;   
+    
+}
+
+
+
+
+
+
+
+/* mobile divice */
+
+@media screen and (max-width:425px) {
+    .nav-container{    
+       flex-direction: column;
+       
+    }
+    .nav-item-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-item-container a{
+        margin-top: 20px;
+    }
+    .nav-item-container .btn-follow{
+        
+        margin-top: 20px;
+    }
+            /* banner section responsive */
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-text{
+               
+        width: 100%;
+        background-image: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+        margin-left: 50px;
+    }
+    .banner-text .button{margin-left: -10px;}
+    .banner-text h1{
+        font-size: 50px;
+    }
+    .banner-text h3{
+        font-size: 25px;
+    }
+
+    .banner-img{
+    margin-top: 30px;
+        width: 100%;
+    }  
+    .icon-container p{
+        font-size: 14px;
+    }
+
+
+
+
+}
+/* medium divice */
+@media screen and (min-width:425px) and (max-width:900px) {
+    .nav-container{    
+       flex-direction: column;
+       text-align: center;
+    }
+    
+    .nav-item-container a{
+        margin-top: 20px;
+    }
+    .nav-item-container .btn-follow{
+        
+        margin-top: 20px;
+    }
+            /* banner section responsive */
+    .banner-container{
+        flex-direction: column;
+        
+    }
+    .banner-text{        
+        width: 100%;
+        background-image: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+        text-align: center;
+    }    
+    .banner-text h1{
+        font-size: 70px;
+    }
+    .banner-text h3{
+        font-size: 40px;
+    }
+
+    .banner-img{
+    margin-top: 30px;
+        width: 100%;
+    }  
+    .icon-container p{
+        font-size: 18px;
+    }
+}
