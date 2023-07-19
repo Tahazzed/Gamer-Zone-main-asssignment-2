@@ -280,9 +280,39 @@ nav{
     padding: 5px;
 }
 
+/* footer related styles */
+.footer{
+    background-color: #111010;    
+    padding: 130px 200px;
+   margin-top: 50px;
+   
+}
+.footer-content{
+    color: #FFF;
+    text-align: center;    
+}
+.footer-logo-container{ 
+    justify-content: center;   
+    align-items: center;
+    display: flex;        
+}
+.footer-logo-container p{    
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center ;
+
+}
+.footer-p-details{       
+    display: flex;    
+    justify-content: center;    
+    gap: 60px;
+    margin-bottom: 20px;
+}
 
 
 
+
+/* c */
 /* Responsive Area */
 
 /* medium divice */
@@ -353,7 +383,18 @@ nav{
     text-align: center;    
 }
 
+/* footer responsive */
 
+.footer{
+       
+    padding: 10px 30px;
+   margin-top: 50px;
+   
+}
+.footer-p-details{       
+    display: flex;    
+   flex-wrap: wrap;
+   gap: 25px;
 }
 
 
